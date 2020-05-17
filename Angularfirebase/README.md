@@ -1,6 +1,6 @@
 # Angular Firebase Auth Project
 
-##For Project Setup
+## For Project Setup
   1. go to src -> environments -> environmens.ts = In firebaseConfig constant set up the values
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
