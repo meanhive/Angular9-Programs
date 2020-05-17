@@ -1,0 +1,60 @@
+<app-alert></app-alert>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 jumbotron text-center">
+      <h3>Login Window</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 well well-lg">
+      <form #login="ngForm" (ngSubmit)="submitHandler(login.value)">
+        <div class="form-group">
+          <label for="username">Email id</label>
+          <input
+            type="email"
+            name="username"
+            id="username"
+            class="form-control"
+            ngModel
+            #username="ngModel"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-control"
+            ngModel
+            #password="ngModel"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input type="submit" value="Login" class="btn btn-info" />
+          <span class="pull-right">
+            Are You a New User?
+            <a href routerLink="/signUp" class="btn btn-link">
+              SignUp Here
+            </a>
+          </span>
+        </div>
+
+        <div class="form-group">
+          <span class="pull-right">
+            Forgot your password?
+            <a href routerLink="/forgot-password" class="btn btn-link">
+              Forgot Password
+            </a>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
